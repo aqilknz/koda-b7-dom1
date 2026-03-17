@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: white;
+    color:black;
+}
+
+main {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    grid-template-rows: auto auto;
+    align-content: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.display {
+    background-color: white;
+    border: 2px solid black;
+    width: 100%;
+    height: 80px;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    padding-inline: 20px;
+    font-size: 40px;
+    border-radius: 30px;
+}
+.display span:first-child{
+    width: 30px;
+}
+.display span:last-child {
+  align-self: flex-end;
+}
+
+.button {
+    margin-top: 10px;
+    display: grid;
+    gap: 6px;
+    grid-template-areas:
+        'degrad  degrad  exf  bk     tk     persen  ac'
+        'inv  sin  in   sev    eight  nine    sl'
+        'phi  cos  log  fourth five   six     ex'
+        'e    tan  rot  one    two    thr     min'
+        'ans  exp  exye zer   dott    equal   plus';
+}
+
+.btn {
+    padding: 20px 34px;
+    border-radius: 90px;
+    background: #b2d3ff;
+    cursor: pointer;
+    font-size: 15px;
+    color: black;
+    border: none;
+}
+
+.btn:hover {
+    background: lightblue;
+}
+
+.degrad { grid-area: degrad; span:nth-child(1){color: blue;}}
+.degrad { grid-area: degrad; }
+.exf    { grid-area: exf; }
+.bk     { grid-area: bk; }
+.tk     { grid-area: tk; }
+.persen { grid-area: persen; }
+.ac     { grid-area: ac; }
+.inv    { grid-area: inv; }
+.sin    { grid-area: sin; }
+.in     { grid-area: in; }
+.sev    { grid-area: sev; background-color: lightgray; }
+.eight  { grid-area: eight; background-color: lightgray; }
+.nine   { grid-area: nine; background-color: lightgray;}
+.sl     { grid-area: sl; }
+.phi    { grid-area: phi; }
+.cos    { grid-area: cos; }
+.log    { grid-area: log; }
+.fourth { grid-area: fourth; background-color: lightgray; }
+.five   { grid-area: five; background-color: lightgray;}
+.six    { grid-area: six; background-color: lightgray;}
+.ex     { grid-area: ex; }
+.e      { grid-area: e; }
+.tan    { grid-area: tang; }
+.rot    { grid-area: rot; }
+.one    { grid-area: one; background-color: lightgray;}
+.two    { grid-area: two; background-color: lightgray;}
+.thr    { grid-area: thr; background-color: lightgray;}
+.min    { grid-area: min; }
+.ans    { grid-area: ans; }
+.exp    { grid-area: exp; }
+.exye   { grid-area: exye; }
+.zer   { grid-area: zer; background-color: lightgray;}
+.dott    { grid-area: dott; background-color: lightgray;}
+.equal  { grid-area: equal;background-color: blue; color: white; }
+.plus   { grid-area: plus; }
+
+
+@media screen and (max-width: 768px) {
+  .display{
+    font-size: 30px;
+  }
+  .button {
+    grid-template-areas:
+      'bk     tk     persen  ac'
+      'sev    eight  nine    sl'
+      'fourth five   six     ex'
+      'one    two    thr     min'
+      'zer   dott    equal   plus'
+      'degrad    degrad    exf     inv'
+      'sin    in     phi     cos'
+      'log    e      tan     rot'
+      'ans    exp    exye    .';
+  }
+  .btn {
+    padding: 10px 24px;
+    font-size: 14px;
+  }
+}
