@@ -1,0 +1,38 @@
+* {
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+section {
+    border: 2px solid black;
+    padding: 20px;
+    width: 200px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: lightgray;
+    border-radius: 20px;
+
+    div {
+        width: 100px;
+        height: 100px;
+        background-color: black;
+        border-radius: 100px;  
+    }
+    div:nth-child(1){
+            background-color: red;
+        }
+}
+
